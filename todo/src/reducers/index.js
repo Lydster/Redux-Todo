@@ -13,7 +13,7 @@ function reducer(state = initialState, action) {
         case ADD_TODO:
             const newTodo = {
                 todoText: action.payload,
-                id: Date.new(),
+                id: Date.now(),
                 completed: false
             };
             return {
